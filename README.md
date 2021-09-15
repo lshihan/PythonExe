@@ -1,2 +1,2 @@
 # PythonExe
-Learning Python from online courses
+Python Online Resources
