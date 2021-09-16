@@ -34,7 +34,7 @@ while len(guessed_state) <50:
 
         break
 
-    if answer_state in real_state and answer_state not in guessed_state:
+    if answer_state in real_state and answer_state not in guessed_state: #After "and" conditional statement is to prevent duplicate state entry.
         guessed_state.append(answer_state)
         t = turtle.Turtle()
         t.hideturtle()
