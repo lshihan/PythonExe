@@ -17,11 +17,14 @@ while len(guessed_state) <50:
 
     if answer_state == "Exit":
         
-        #Own solution
-        missed_state = real_state
-        for i in guessed_state:
-            if i in missed_state:
-                missed_state.remove(i)
+        #Best solution using list comprehension
+        missed_state = [i for i in real_state if i not in guessed_state]
+        
+        # Own solution
+        # missed_state = real_state
+        # for i in guessed_state:
+        #     if i in missed_state:
+        #         missed_state.remove(i)
 
         # Alternative solution from course mentor
         # missed_state = []
